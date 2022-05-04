@@ -1,0 +1,662 @@
+/*------------------------------------------------------------------
+Table of contents
+
+    
+    1. Global styles
+        1.1 Button styles
+    2. Typography
+    3. Hero image
+    4. Hero search box
+    5. Destinations
+        5.1 Destinations slider
+    6. Things to do
+    7. Family Subscription panel
+    8. Media queries
+
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+   1. Global styles
+-------------------------------------------------------------------*/
+body {
+	font-size: 18px;
+	font-weight: 400;
+
+}
+
+.container {
+	max-width: 960px;
+}
+
+.form-control {
+	text-indent: 15px;
+	border: none;
+	height: 45px;
+	border-radius: 0px;
+	border-bottom: 1px solid #eee
+}
+
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #eee;
+	outline: 0;
+	box-shadow: none;
+	border-bottom: 1px solid blue
+}
+
+.form-control:focus {
+	color: blue
+}
+
+/*--------------------------
+   1.1 Button styles
+----------------------------*/
+
+.btn {
+	font-weight: 600;
+	border-radius: 28px;
+
+}
+
+
+.btn-primary {
+	background: linear-gradient(90deg, #FE2900 0%, #FF9000 100%);
+	margin: 23px 0px;
+	width: 320px;
+	border: 2px solid #ffffff;
+	padding: 10px 40px;
+	font-size: 16px;
+	height: 56px;
+
+}
+
+
+.btn-secondary {
+	background-color: transparent;
+	color: #000000;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	width: 164px;
+	height: 56px;
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.btn-secondary:hover {
+	background-color: #04A777;
+}
+
+
+.btn-info {
+	background: #006FFF;
+	border-radius: 6px !important;
+	color: #FFFFFF;
+	font-size: 11.86px;
+	width: 108.47px;
+	height: 30.51px;
+}
+
+.btn-outline-info {
+	border-radius: 6px !important;
+	border: 1px solid #444444;
+	font-size: 11.8644px;
+}
+
+
+.btn-more {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: transparent;
+	width: 320px;
+	height: 56px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+}
+
+
+/*------------------------------------------------------------------
+   2. Typography
+-------------------------------------------------------------------*/
+h2 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	margin: 0px 18px;
+	color: #191919;
+}
+
+h5 {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 30px;
+	color: #000000;
+}
+
+
+/*------------------------------------------------------------------
+   3. Hero Image
+-------------------------------------------------------------------*/
+
+
+.hero-image {
+	background-image: url(./images/hero-image.png);
+	height: 417px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
+
+.hero-image h1 {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 77px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 140px;
+}
+
+
+/*------------------------------------------------------------------
+   4. Hero search box
+-------------------------------------------------------------------*/
+.hero-box {
+	background: #FFFFFF;
+	width: 978px;
+	height: 335px;
+	border: 1px solid #FAFAFA;
+	box-sizing: border-box;
+	border-radius: 20px;
+	box-shadow: 0 2px 7px 0 rgb(0 0 0 / 7%);
+	margin-top: -80px;
+
+}
+
+.hero-box a {
+	color: #000000;
+	font-size: 18px;
+	line-height: 18px;
+	padding: 0;
+
+	margin: 20px 0px;
+
+
+}
+
+.hero-box .active {
+	border-bottom: 3px solid #000000;
+}
+
+.hero-box .active .nav-link {
+	color: #191919;
+	font-weight: 600;
+}
+
+.hero-box .nav-item {
+	margin-right: 60px;
+
+}
+
+
+.icon-search {
+	padding-right: 20px;
+	background: url("./images/search.png") no-repeat right;
+	background-size: 20px;
+}
+
+.input-group {
+	align-items: center;
+	padding: 0px 20px 0px 26px;
+	background: #FFFFFF;
+	border: 1px solid #dcdcdc;
+	box-sizing: border-box;
+	border-radius: 28px;
+	margin: 23px 0px;
+	height: 56px;
+
+
+}
+
+.input-group .form-control {
+	border-bottom: none;
+	text-indent: 0;
+
+}
+
+.hero-box-panel {
+	padding: 8px 79px;
+}
+
+.hero-box ::placeholder {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 16px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.section-text a,
+h2 a,
+.destinations-header a {
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.explore span {
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.section-text .text {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.hero-box .search-tag p {
+	border: 1px solid #DCDCDC;
+	box-sizing: border-box;
+	border-radius: 63px;
+	padding: 12px 24px;
+	margin: 0px 14px;
+
+
+}
+
+.explore i {
+	margin: 0px 7px 7px 7px;
+
+}
+
+/*------------------------------------------------------------------
+   5. Destinations
+-------------------------------------------------------------------*/
+
+.destinations {
+	background-color: #E5FAF4;
+
+}
+
+.destinations-version-2 {
+	background-color: #E5FAF4;
+	padding: 30px;
+	height: 407px;
+}
+
+.destinations p,
+.destinations-version-2 p {
+	font-size: 24px;
+	color: #04A777;
+}
+
+.destinations-header {
+	color: #000000;
+	text-align: left;
+	padding: 30px;
+}
+
+.destinations-header h2,
+.destinations-header h5 {
+	margin: 0;
+	display: inline-block;
+}
+
+.destinations-header button {
+	float: right;
+}
+
+.destinations-header a {
+	color: #04A777;
+}
+
+.destinations-image,
+.categories-image {
+	padding: 0 15px;
+}
+
+.destinations-image img,
+.categories-image img {
+	margin-bottom: 16px;
+}
+
+
+.destinations-header button {
+	float: right;
+}
+
+.show-all-section {
+	background-color: #E5FAF4;
+	padding: 30px 0;
+}
+
+
+/*------------------------------------------------------------------
+   6. Things to do
+-------------------------------------------------------------------*/
+.star-icon {
+	margin-bottom: 33px;
+}
+
+.card {
+	padding: 20px;
+	border: none
+}
+
+.card-body h4 {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	margin: 0px 6px;
+
+}
+
+.card h3 {
+	text-align: left;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 4px 0px;
+
+}
+
+.card .save {
+	right: 45px;
+	bottom: 10px;
+}
+
+.card .like {
+	right: 15px;
+	bottom: 8px;
+}
+
+/*------------------------------------------------------------------
+   6.1 Things to do mobile
+-------------------------------------------------------------------*/
+
+.image-slider-wrap .slick-arrow {
+	z-index: 1;
+}
+
+.image-slider-wrap .slick-prev {
+	left: 20px;
+}
+
+.image-slider-wrap .slick-next {
+	right: 10px;
+}
+
+.image-slider-wrap .slick-next:before {
+	width: 56px;
+	height: 56px;
+	border: 1px solid #DCDCDC;
+	box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
+	border-radius: 28px;
+	background: url(./images/right.png) no-repeat center center fixed, #FFFFFF;
+	content: " ";
+	position: absolute;
+	left: -16px;
+	top: -6px;
+}
+
+.image-slider-wrap .slick-next {
+	width: 56px;
+	height: 56px;
+	top: 120px;
+
+}
+
+.image-slider-wrap .slick-prev:before {
+	display: none;
+}
+
+.image-slider-wrap .slick-prev {
+	display: none;
+
+}
+
+
+/*------------------------------------------------------------------
+   7. Family Subscription panel
+-------------------------------------------------------------------*/
+
+.family .row {
+	background: #E5FAF4;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+}
+
+.family h2 {
+	font-family: 'Oooh Baby';
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 60px;
+	color: #007754;
+	margin: 0;
+
+}
+
+.family {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	color: #007754;
+}
+
+.family p {
+	font-size: 24px;
+	line-height: 36px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	color: #007754;
+}
+
+.family label {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.family label a {
+	color: #007754;
+	text-decoration: underline;
+
+}
+
+.family .family-body {
+	padding: 35px 75px;
+}
+
+.family .btn-primary {
+	border-radius: 56px;
+	font-size: 20px;
+	color: #FAFAFA;
+	width: 100% !important;
+}
+
+.container-sm {
+	max-width: 1234px;
+}
+
+.family img {
+	border-radius: 0px 20px 20px 0px;
+}
+
+.family input::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+
+/*------------------------------------------------------------------
+   8. Media queries
+-------------------------------------------------------------------*/
+/*xxx small devices (portrait phones, less than 344px)*/
+@media (max-width: 343.98px) {
+	.search-mobile.hero-box a {
+		font-size: 15px;
+	}
+
+	.search-mobile p {
+		font-size: 11px !important;
+	}
+}
+
+/*xx small devices (portrait phones, less than 401px)*/
+@media (max-width: 401px) {
+	.hero-image {
+		background-image: url(./images/hero-image-mobile.png);
+
+	}
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.family .family-body {
+		padding: 30px !important;
+	}
+
+	.btn-more {
+		width: 240px;
+	}
+
+	h2 {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 769px) {
+
+
+	h5 {
+		font-size: 18px !important;
+		font-weight: 300 !important;
+	}
+
+	.destinations-header {
+		padding: 35px 20px;
+	}
+
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+	.family img {
+		border-radius: 0px !important;
+	}
+
+
+	.family h2 {
+		font-size: 36px;
+		line-height: 60px;
+		color: #007754;
+		margin: 0;
+	}
+
+	.family p {
+		font-size: 16px;
+	}
+
+	.family input::placeholder {
+		font-size: 18px;
+	}
+
+	.search-mobile.hero-box h2 {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 44px;
+		color: #212D40;
+	}
+
+	.search-mobile.hero-box {
+		width: unset;
+		margin: 15px;
+		height: 100%;
+
+
+	}
+
+	.search-mobile .hero-box-panel {
+		padding: 10px 20px;
+	}
+
+	.search-mobile.hero-box .nav-item {
+		margin-right: 30px;
+	}
+
+	.search-mobile .nav-item.dropdown a {
+		color: rgba(0, 0, 0, 0.52);
+	}
+
+
+	.search-mobile .search-tag-mobile p {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		padding: 10px !important;
+		margin: 0px;
+	}
+
+	.search-mobile .row-flex-wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.search-mobile .content {
+		height: 100%;
+		border: 1px solid #DCDCDC;
+		box-sizing: border-box;
+		border-radius: 63px;
+	}
+
+	.search-mobile .btn-primary {
+		width: 100%;
+
+	}
+
+	.search-mobile ::placeholder {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.icon {
+		height: 12px;
+		width: 15px;
+		display: inline-block;
+	}
+
+	.icon-categories {
+		background: url('./images/cat-icon.png') no-repeat;
+		background-position: left;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 27px;
+		color: rgba(0, 0, 0, 0.7);
+	}
+
+	.btn-categories {
+		color: rgba(0, 0, 0, 0.7);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 27px;
+    }
+}
