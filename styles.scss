@@ -10,11 +10,23 @@ Table of contents
     5. Destinations
         5.1 Destinations slider
     6. Things to do
+        6.1 Things to do mobile
     7. Family Subscription panel
     8. Media queries
 
 -------------------------------------------------------------------*/
+$global-font-family:    'Inter';
+$heading-font-family:   'Roboto';
+$global-font-size:      18px;
+$font-size-small:       16px;
+$font-size-h1:          72px;
+$font-size-h2:          36px;
+$font-size-h4:          12px;
 
+
+$color-black:                #000000;
+$color-white:                #ffffff;
+$light-green:                #E5FAF4;
 
 /*------------------------------------------------------------------
    1. Global styles
@@ -59,7 +71,7 @@ body {
   background: linear-gradient(90deg, #FE2900 0%, #FF9000 100%);
   margin: 23px 0px;
   width: 320px;
-  border: 2px solid #ffffff;
+  border: 2px solid $color-white;
   padding: 10px 40px;
   font-size: 16px;
   height: 56px;
@@ -67,11 +79,11 @@ body {
 
 .btn-secondary {
   background-color: transparent;
-  color: #000000;
+  color: $color-black;
   border: 1px solid rgba(0, 0, 0, 0.12);
   width: 164px;
   height: 56px;
-  font-family: 'Inter';
+  font-family: $global-font-family;
   font-weight: 500;
   font-size: 16px;
 
@@ -83,7 +95,7 @@ body {
 .btn-info {
   background: #006FFF;
   border-radius: 6px !important;
-  color: #FFFFFF;
+  color: $color-white;
   font-size: 11.86px;
   width: 108.47px;
   height: 30.51px;
@@ -118,10 +130,10 @@ h2 {
 }
 
 h5 {
-	font-family: 'Inter';
+	font-family: $global-font-family;
 	font-weight: 400;
 	font-size: 30px;
-	color: #000000;
+	color: $color-black;
 }
 
 
@@ -140,12 +152,12 @@ h5 {
   position: relative;
 
   h1 {
-    font-family: 'Roboto';
+    font-family: $heading-font-family;
     font-weight: 700;
     font-size: 72px;
     line-height: 77px;
     text-align: center;
-    color: #FFFFFF;
+    color: $color-white;
     margin-top: 140px;
   }
 }
@@ -155,7 +167,7 @@ h5 {
    4. Hero search box
 -------------------------------------------------------------------*/
 .hero-box {
-  background: #FFFFFF;
+  background: $color-white;
   width: 978px;
   height: 335px;
   border: 1px solid #FAFAFA;
@@ -165,7 +177,7 @@ h5 {
   margin-top: -80px;
 
   a {
-    color: #000000;
+    color: $color-black;
     font-size: 18px;
     line-height: 18px;
     padding: 0;
@@ -173,7 +185,7 @@ h5 {
   }
 
   .active {
-    border-bottom: 3px solid #000000;
+    border-bottom: 3px solid $color-black;
 
     .nav-link {
       color: #191919;
@@ -195,7 +207,7 @@ h5 {
 .input-group {
   align-items: center;
   padding: 0px 20px 0px 26px;
-  background: #FFFFFF;
+  background: $color-white;
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
   border-radius: 28px;
@@ -214,7 +226,7 @@ h5 {
 
 .hero-box ::placeholder {
   font-weight: 500;
-  font-size: 18px;
+  font-size: $global-font-size;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -232,7 +244,7 @@ h5 {
 
 .section-text .text {
   font-weight: 300;
-  font-size: 18px;
+  font-size: $global-font-size;
   line-height: 28px;
 }
 
@@ -253,11 +265,11 @@ h5 {
 -------------------------------------------------------------------*/
 
 .destinations {
-  background-color: #E5FAF4;
+  background-color: $light-green;
 }
 
 .destinations-version-2 {
-  background-color: #E5FAF4;
+  background-color: $light-green;
   padding: 30px;
   height: 407px;
 }
@@ -268,7 +280,7 @@ h5 {
 }
 
 .destinations-header {
-  color: #000000;
+  color: $color-black;
   text-align: left;
   padding: 30px;
 
@@ -299,7 +311,7 @@ h5 {
 }
 
 .show-all-section {
-  background-color: #E5FAF4;
+  background-color: $light-green;
   padding: 30px 0;
 }
 
@@ -318,7 +330,7 @@ h5 {
 
 .card-body h4 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: $font-size-h4;
   line-height: 15px;
   margin: 0px 6px;
 }
@@ -327,7 +339,7 @@ h5 {
   h3 {
     text-align: left;
     font-weight: 600;
-    font-size: 18px;
+    font-size: $global-font-size;
     line-height: 24px;
     margin: 4px 0px;
   }
@@ -365,7 +377,7 @@ h5 {
       border: 1px solid #DCDCDC;
       box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
       border-radius: 28px;
-      background: url(./images/right.png) no-repeat center center fixed, #FFFFFF;
+      background: url(./images/right.png) no-repeat center center fixed, $color-white;
       content: " ";
       position: absolute;
       left: -16px;
@@ -393,7 +405,7 @@ h5 {
 
 .family {
   .row {
-    background: #E5FAF4;
+    background: $light-green;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
   }
@@ -407,7 +419,7 @@ h5 {
     margin: 0;
   }
 
-  font-family: 'Inter';
+  font-family: $global-font-family;
   font-style: normal;
   font-weight: 400;
   color: #007754;
@@ -415,7 +427,7 @@ h5 {
   p {
     font-size: 24px;
     line-height: 36px;
-    font-family: 'Inter';
+    font-family: $global-font-family;
     font-style: normal;
     font-weight: 400;
     color: #007754;
@@ -454,7 +466,7 @@ h5 {
 
   input::placeholder {
     color: rgba(0, 0, 0, 0.3);
-    font-family: 'Inter';
+    font-family: $global-font-family;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -506,7 +518,7 @@ h5 {
 /*Small devices (landscape phones, less than 768px)*/
 @media (max-width: 769px) {
   h5 {
-    font-size: 18px !important;
+    font-size: $global-font-size !important;
     font-weight: 300 !important;
   }
 
@@ -534,7 +546,7 @@ h5 {
     }
 
     input::placeholder {
-      font-size: 18px;
+      font-size: $global-font-size;
     }
   }
 
@@ -613,7 +625,7 @@ h5 {
   .btn-categories {
     color: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-    font-family: 'Inter';
+    font-family: $global-font-family;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
